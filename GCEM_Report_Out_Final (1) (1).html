@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Global Consumer Engagement Workshop — Close-Out Summary</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',Arial,sans-serif;background:#F4F7FB;color:#1a2332;font-size:13px;line-height:1.65}
+#exportBtn{position:fixed;top:16px;right:20px;z-index:9999;display:flex;align-items:center;gap:7px;padding:9px 20px;background:#C41230;color:#fff;border:none;border-radius:7px;font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 4px 14px rgba(196,18,48,.3)}
+#exportBtn:hover{background:#a80f28}
+.hdr{background:linear-gradient(135deg,#061226 0%,#0B1F4B 55%,#122d68 100%);padding:36px 48px 0}
+.htag{font-size:10px;font-weight:600;color:rgba(255,255,255,.38);letter-spacing:4px;text-transform:uppercase;margin-bottom:10px}
+.htitle{font-family:'Playfair Display',serif;font-size:34px;color:#fff;line-height:1.12;font-weight:600;margin-bottom:6px}
+.hsub{font-size:15px;font-weight:700;color:rgba(255,255,255,.85)}
+.hleads{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:12px 18px;text-align:right;flex-shrink:0;margin-top:4px}
+.hleads-lbl{font-size:10px;color:rgba(255,255,255,.35);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px}
+.hleads-nm{font-size:12px;color:rgba(255,255,255,.85);line-height:1.9}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:9px 9px 0 0;padding:18px 18px 24px}
+.snum{font-family:'Playfair Display',serif;font-size:34px;font-weight:600;color:#fff;line-height:1}
+.slbl{font-size:13px;font-weight:600;color:rgba(255,255,255,.8);margin-top:5px}
+.ssub{font-size:11px;color:rgba(255,255,255,.38);margin-top:3px;line-height:1.5}
+.body{padding:28px 48px 48px;max-width:1400px;margin:0 auto}
+.card{background:#fff;border-radius:10px;padding:24px;border:1px solid #DDE6F0;margin-bottom:18px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.sh{display:flex;align-items:center;gap:9px;margin-bottom:16px}
+.sbar{width:3px;border-radius:2px;flex-shrink:0;height:20px}
+.stitle{font-family:'Playfair Display',serif;font-size:19px;color:#0a1c42;font-weight:600}
+.ssec{font-size:12px;color:#64748b;margin-left:4px}
+.rr{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid #EDF2F8}
+.rr:last-child{border-bottom:none;padding-bottom:0}
+.rnum{font-size:10px;font-weight:700;padding-top:3px;min-width:18px}
+.rtext{font-size:13px;line-height:1.75}
+.mxg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.quad{border-radius:8px;padding:13px;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.quad:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(0,0,0,.12)}
+.qtop{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2px}
+.qtitle{font-size:13px;font-weight:700;line-height:1.2}
+.qnum{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;line-height:1}
+.qdesc{font-size:10px;font-style:italic;margin-bottom:8px}
+.qex{border-top:1px dashed rgba(0,0,0,.12);padding-top:7px}
+.qexrow{display:flex;align-items:center;gap:5px;margin-bottom:3px}
+.dot{width:4px;height:4px;border-radius:50%;flex-shrink:0}
+.axlbl{text-align:center;font-size:10px;font-weight:600;color:#8898aa;letter-spacing:1.5px;text-transform:uppercase}
+.capc{padding:13px;border-radius:8px;background:#F4F7FB;border:1px solid #DDE6F0}
+.cap-icon{font-size:20px;margin-bottom:8px}
+.cap-t{font-size:12px;font-weight:600;color:#0a1c42;margin-bottom:4px;line-height:1.3}
+.cap-d{font-size:11px;color:#64748b;line-height:1.55}
+.govc{background:#F4F7FB;border:1px solid #DDE6F0;border-radius:9px;padding:14px;display:flex;gap:11px}
+.govc-icon{font-size:20px}
+.govc-title{font-size:13px;font-weight:600;color:#0a1c42;margin-bottom:3px}
+.tbd{font-size:11px;font-weight:500;color:#64748b;background:#E8EDF5;padding:1px 8px;border-radius:4px;margin-left:6px}
+.govc-d{font-size:12px;color:#64748b;line-height:1.6}
+table{width:100%;border-collapse:collapse}
+th{padding:9px 12px;text-align:left;font-size:11px;font-weight:700;white-space:nowrap}
+td{padding:8px 12px;line-height:1.45}
+.thead-dk th{background:#0a1c42;color:#fff}
+.thead-lt th{background:#F4F7FB;color:#0a1c42;border-bottom:2px solid #DDE6F0}
+.teven{background:#fff;border-bottom:1px solid #EDF2F8}
+.todd{background:#FAFBFD;border-bottom:1px solid #EDF2F8}
+.teven:hover,.todd:hover{background:#EEF3FB}
+.pill{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;white-space:nowrap}
+.frow{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:9px}
+.flbl{font-size:10px;font-weight:700;color:#8898aa;letter-spacing:1.5px;min-width:70px}
+.fbtn{font-size:11px;padding:4px 13px;border-radius:20px;border:1.5px solid #DDE6F0;background:#fff;color:#475569;cursor:pointer;font-family:inherit;transition:all .12s}
+.fbtn:hover{background:#F0F4FB}
+.showing{display:inline-block;padding:2px 11px;border-radius:20px;font-size:12px;font-weight:600}
+.voc-card{background:#F4F7FB;border-radius:9px;padding:16px 12px;text-align:center;border:1px solid #DDE6F0}
+.voc-n{font-family:'Playfair Display',serif;font-size:34px;font-weight:600;color:#0a1c42;line-height:1}
+.voc-lbl{font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+.quote-card{background:#F4F7FB;border-radius:8px;padding:14px;border:1px solid #DDE6F0}
+.quote-text{font-size:12px;font-style:italic;color:#1a2332;line-height:1.75;margin-bottom:8px}
+.quote-meta{font-size:11px;color:#64748b;font-weight:500}
+/* MODAL */
+.modal-ov{display:none;position:fixed;inset:0;background:rgba(10,28,66,.55);z-index:9000;align-items:center;justify-content:center}
+.modal-ov.open{display:flex}
+.modal-box{background:#fff;border-radius:14px;width:90%;max-width:820px;max-height:82vh;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(0,0,0,.25);overflow:hidden}
+.modal-hdr{padding:18px 22px 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #DDE6F0;flex-shrink:0}
+.modal-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:600;color:#0a1c42}
+.modal-desc{font-size:12px;color:#64748b;margin-top:3px}
+.modal-close{background:none;border:none;font-size:24px;color:#94a3b8;cursor:pointer;padding:0 6px;line-height:1;font-family:inherit}
+.modal-body{overflow-y:auto;padding:18px 22px;flex:1}
+@media print{
+  #exportBtn,.frow,.modal-ov{display:none!important}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  @page{size:A4 landscape;margin:10mm}
+  .card{page-break-inside:avoid;break-inside:avoid}
+  thead{display:table-header-group}
+  table{font-size:10px}
+  th,td{padding:5px 8px}
+}
+</style>
+</head>
+<body>
+
+<button id="exportBtn" onclick="window.print()">&#8595; Export PDF</button>
+
+<div class="hdr">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px">
+    <div>
+      <div class="htag">GCEM Ringmaster Workshop &nbsp;·&nbsp; Amsterdam &nbsp;·&nbsp; April 2025</div>
+      <h1 class="htitle">Global Consumer Engagement Workshop (GCEM)</h1>
+      <p class="hsub">Close-out summary</p>
+    </div>
+    <div class="hleads">
+      <div class="hleads-lbl">Workshop Leads</div>
+      <div class="hleads-nm">Rishabh Advani &nbsp;·&nbsp; Raghav Narayan<br/>Priyank Agarwal &nbsp;·&nbsp; Rafael Ruiseñor</div>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="snum">15</div><div class="slbl">Participants</div><div class="ssub">GBS · FSQ · IT/Tech · Consumer Advocacy · Marketing Transformation</div></div>
+    <div class="stat"><div class="snum">9 wks</div><div class="slbl">Pre-work</div><div class="ssub">20+ virtual sessions across NA & EU</div></div>
+    <div class="stat"><div class="snum">36</div><div class="slbl">Pain Points</div><div class="ssub">Uncovered across EU & NA (Pre Workshop)</div></div>
+    <div class="stat"><div class="snum">33</div><div class="slbl">Opportunities</div><div class="ssub">Across 5 project tracks</div></div>
+  </div>
+</div>
+
+<div class="body">
+
+<!-- ILLUSTRATION -->
+<div style="margin-bottom:18px;border-radius:11px;overflow:hidden;border:1px solid #1a3570">
+<svg width="100%" viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" style="display:block">
+<defs>
+  <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  <linearGradient id="bgg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#061226"/><stop offset="50%" stop-color="#0B1F4B"/><stop offset="100%" stop-color="#122d68"/></linearGradient>
+  <linearGradient id="hbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a3570"/><stop offset="100%" stop-color="#0B1F4B"/></linearGradient>
+</defs>
+<rect width="700" height="220" fill="url(#bgg)"/>
+<g opacity="0.06" stroke="#fff" stroke-width="0.5"><line x1="0" y1="55" x2="700" y2="55"/><line x1="0" y1="110" x2="700" y2="110"/><line x1="0" y1="165" x2="700" y2="165"/><line x1="140" y1="0" x2="140" y2="220"/><line x1="280" y1="0" x2="280" y2="220"/><line x1="420" y1="0" x2="420" y2="220"/><line x1="560" y1="0" x2="560" y2="220"/></g>
+<path d="M185 72 Q260 72 308 97" fill="none" stroke="#006D70" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.7" marker-end="url(#ah)"/>
+<path d="M185 148 Q260 148 308 123" fill="none" stroke="#C97B0C" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.7" marker-end="url(#ah)"/>
+<path d="M515 72 Q440 72 392 97" fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.7" marker-end="url(#ah)"/>
+<path d="M515 148 Q440 148 392 123" fill="none" stroke="#C41230" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.7" marker-end="url(#ah)"/>
+<circle cx="350" cy="110" r="68" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.12"/>
+<circle cx="350" cy="110" r="52" fill="url(#hbg)" stroke="#4a6fa5" stroke-width="1"/>
+<text font-family="Georgia,serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" x="350" y="104">Contact Centre</text>
+<text font-family="Georgia,serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" x="350" y="119">of the Future</text>
+<text font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.5)" text-anchor="middle" x="350" y="134">Consumer Pulse</text>
+<rect x="52" y="42" width="132" height="58" rx="10" fill="#004d50" stroke="#006D70" stroke-width="1"/>
+<rect x="52" y="42" width="132" height="10" rx="10" fill="#006D70"/><rect x="52" y="48" width="132" height="4" fill="#006D70"/>
+<circle cx="82" cy="72" r="12" fill="rgba(0,109,112,0.3)"/>
+<text font-size="16" x="82" y="78" text-anchor="middle" fill="#5DCAA5">&#9743;</text>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#5DCAA5" x="100" y="68">Contact</text>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#5DCAA5" x="100" y="82">Center</text>
+<rect x="52" y="118" width="132" height="58" rx="10" fill="#4a2e00" stroke="#C97B0C" stroke-width="1"/>
+<rect x="52" y="118" width="132" height="10" rx="10" fill="#C97B0C"/><rect x="52" y="124" width="132" height="4" fill="#C97B0C"/>
+<circle cx="82" cy="148" r="12" fill="rgba(201,123,12,0.25)"/>
+<text font-size="14" x="82" y="153" text-anchor="middle" fill="#EF9F27">&#9733;</text>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#EF9F27" x="100" y="144">Ratings &amp;</text>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#EF9F27" x="100" y="158">Reviews</text>
+<rect x="516" y="42" width="132" height="58" rx="10" fill="#2d1a5e" stroke="#7C3AED" stroke-width="1"/>
+<rect x="516" y="42" width="132" height="10" rx="10" fill="#7C3AED"/><rect x="516" y="48" width="132" height="4" fill="#7C3AED"/>
+<circle cx="546" cy="72" r="12" fill="rgba(124,58,237,0.25)"/>
+<text font-size="14" x="546" y="77" text-anchor="middle" fill="#A78BFA">&#10697;</text>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#A78BFA" x="564" y="68">Social</text>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#A78BFA" x="564" y="82">Media</text>
+<rect x="516" y="118" width="132" height="58" rx="10" fill="#3d0a0a" stroke="#C41230" stroke-width="1"/>
+<rect x="516" y="118" width="132" height="10" rx="10" fill="#C41230"/><rect x="516" y="124" width="132" height="4" fill="#C41230"/>
+<circle cx="546" cy="148" r="12" fill="rgba(196,18,48,0.25)"/>
+<text font-family="Arial,sans-serif" font-size="12" font-weight="700" x="546" y="153" text-anchor="middle" fill="#F87171">AI</text>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#F87171" x="564" y="144">AI / LLM</text>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#F87171" x="564" y="158">Listening</text>
+<rect x="0" y="195" width="700" height="25" fill="rgba(0,0,0,0.3)"/>
+<text font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="rgba(255,255,255,0.55)" x="350" y="211" text-anchor="middle" letter-spacing="2">GLOBAL CONSUMER ENGAGEMENT WORKSHOP &#183; AMSTERDAM &#183; APRIL 2025</text>
+</svg>
+</div>
+
+<!-- RECAP + OUTCOMES -->
+<div class="g2" style="margin-bottom:18px">
+  <div class="card" style="margin-bottom:0">
+    <div class="sh"><div class="sbar" style="background:#C41230"></div><h2 class="stitle">Recap</h2></div>
+    <div class="rr"><div class="rnum" style="color:#C41230">01</div><div class="rtext">The workshop involved <strong>15 participants across GBS, FSQ, IT/Tech, Consumer Advocacy &amp; Marketing Transformation</strong>, covering the full E2E GCEM across 5 layers — Consumer, Contact Center (L1), Escalation (L2 &amp; L3), FSQ, and Reporting &amp; Analytics — across <strong>4 channels</strong> (Phone, Email, Social, Physical Mail) in <strong>EU (UKI + Benelux)</strong> and <strong>NA</strong>.</div></div>
+    <div class="rr"><div class="rnum" style="color:#C41230">02</div><div class="rtext">Pre-workshop, the team ran <strong>9 weeks of structured preparation</strong> across <strong>20+ virtual sessions</strong> — SIPOC workshops for NA &amp; EU, Swimlane mapping, AS-IS process mapping, and Gemba walks with 9 cross-functional teams across both regions.</div></div>
+    <div class="rr"><div class="rnum" style="color:#C41230">03</div><div class="rtext">Pre-work uncovered <strong>36 pain points</strong> and the workshop identified <strong>33 opportunities</strong>, all working toward producing <strong>ONE</strong> cross-functionally aligned, future-state Global Operating Model.</div></div>
+  </div>
+  <div class="card" style="margin-bottom:0">
+    <div class="sh"><div class="sbar" style="background:#0a1c42"></div><h2 class="stitle">Outcomes</h2></div>
+    <div class="rr"><div class="rnum" style="color:#0a1c42">01</div><div class="rtext">Define the future ways of working for how Kraft Heinz handles consumer engagement globally — with an intent to fully transform into <strong>Contact Centre of the Future</strong> by bringing insights &amp; intelligence from all touchpoints i.e., <strong>Contact Center, Ratings and Reviews, Social Media,</strong> and <strong>AI/LLM Listening</strong> into a connected model.</div></div>
+    <div class="rr"><div class="rnum" style="color:#0a1c42">02</div><div class="rtext">All <strong>33 opportunities classified</strong> by impact &amp; effort, across <strong>5 Projects — Sonic, NA Tech Transformation, Continuous Improvement, Consumer Pulse &amp; ROW Implementation.</strong></div></div>
+    <div class="rr"><div class="rnum" style="color:#0a1c42">03</div><div class="rtext"><strong>Project Sonic opportunities</strong> identified for fast, visible impact; delivering near-term wins in parallel with longer-term transformation.</div></div>
+    <div class="rr"><div class="rnum" style="color:#0a1c42">04</div><div class="rtext">The To-Be state introduces <strong>these key capabilities</strong>: Omnichannel Environment, AI/Deflection, Language Translation, Global Escalation Matrix, Reason Hierarchy Codes Standardization, Salesforce Auto Transcription, Global VOC Reporting (Consumer Pulse Governance Model) &amp; Revamped Knowledge Base.</div></div>
+  </div>
+</div>
+
+<!-- OPPORTUNITY ANALYSIS HEADING -->
+<div class="sh" style="margin-bottom:16px">
+  <div class="sbar" style="background:#C97B0C"></div>
+  <h2 class="stitle">Opportunity analysis</h2>
+  <span class="ssec">33 opportunities · classified by impact, effort &amp; project track</span>
+</div>
+
+<!-- IMPACT-EFFORT MATRIX -->
+<div class="card">
+  <div style="font-size:13px;font-weight:600;color:#0a1c42;margin-bottom:3px">Impact–effort matrix</div>
+  <div style="font-size:12px;color:#64748b;margin-bottom:14px">Distribution of all 33 opportunities &nbsp;·&nbsp; <span style="color:#1e40af;font-weight:600">Click any quadrant to see its opportunities</span></div>
+  <div style="display:flex;gap:8px">
+    <div style="display:flex;flex-direction:column;justify-content:space-between;padding-bottom:22px;padding-right:6px;font-size:10px;color:#8898aa;font-weight:600;letter-spacing:.8px;text-transform:uppercase;width:24px">
+      <div style="writing-mode:vertical-rl;transform:rotate(180deg)">HIGH</div>
+      <div style="writing-mode:vertical-rl;transform:rotate(180deg)">LOW</div>
+    </div>
+    <div style="flex:1">
+      <div class="axlbl" style="margin-bottom:7px">← IMPACT →</div>
+      <div class="mxg">
+        <div class="quad" onclick="openQuadModal('qw')" style="background:#e2f5ef;border:1.5px solid rgba(0,109,112,.18)">
+          <div class="qtop"><div class="qtitle" style="color:#006D70">Quick wins</div><div class="qnum" style="color:#006D70">6</div></div>
+          <div class="qdesc" style="color:#006D70">High impact · Low effort</div>
+          <div class="qex" style="border-color:rgba(0,109,112,.25)">
+            <div class="qexrow"><div class="dot" style="background:#006D70"></div><span style="font-size:10.5px;color:#475569">CCaaS Roadmap (NA Tech)</span></div>
+            <div class="qexrow"><div class="dot" style="background:#006D70"></div><span style="font-size:10.5px;color:#475569">SF Real-Time Alerts (Sonic)</span></div>
+            <div class="qexrow"><div class="dot" style="background:#006D70"></div><span style="font-size:10.5px;color:#475569">Global VOC Reporting (Consumer Pulse)</span></div>
+          </div>
+          <div style="margin-top:9px;font-size:10px;color:#006D70;font-weight:600;opacity:.8">▼ Click to view all 6</div>
+        </div>
+        <div class="quad" onclick="openQuadModal('sb')" style="background:#e8edf8;border:1.5px solid rgba(10,28,66,.1)">
+          <div class="qtop"><div class="qtitle" style="color:#0a1c42">Strategic bets</div><div class="qnum" style="color:#0a1c42">21</div></div>
+          <div class="qdesc" style="color:#0a1c42">High impact · High–med effort</div>
+          <div class="qex" style="border-color:rgba(10,28,66,.18)">
+            <div class="qexrow"><div class="dot" style="background:#0a1c42"></div><span style="font-size:10.5px;color:#475569">CCaaS Implementation (NA Tech)</span></div>
+            <div class="qexrow"><div class="dot" style="background:#0a1c42"></div><span style="font-size:10.5px;color:#475569">AI Chatbot Solution (NA Tech)</span></div>
+            <div class="qexrow"><div class="dot" style="background:#0a1c42"></div><span style="font-size:10.5px;color:#475569">Global Reason Code Std. (Cont. Improvement)</span></div>
+          </div>
+          <div style="margin-top:9px;font-size:10px;color:#0a1c42;font-weight:600;opacity:.8">▼ Click to view all 21</div>
+        </div>
+        <div class="quad" onclick="openQuadModal('qe')" style="background:#fdf5e4;border:1.5px solid rgba(201,123,12,.18)">
+          <div class="qtop"><div class="qtitle" style="color:#C97B0C">Quick enhancers</div><div class="qnum" style="color:#C97B0C">3</div></div>
+          <div class="qdesc" style="color:#C97B0C">Low impact · Low effort</div>
+          <div class="qex" style="border-color:rgba(201,123,12,.25)">
+            <div class="qexrow"><div class="dot" style="background:#C97B0C"></div><span style="font-size:10.5px;color:#475569">SMS Queue (AWS)</span></div>
+            <div class="qexrow"><div class="dot" style="background:#C97B0C"></div><span style="font-size:10.5px;color:#475569">3-star Ratings eComm</span></div>
+            <div class="qexrow"><div class="dot" style="background:#C97B0C"></div><span style="font-size:10.5px;color:#475569">R&amp;R Tech Optimisation</span></div>
+          </div>
+          <div style="margin-top:9px;font-size:10px;color:#C97B0C;font-weight:600;opacity:.8">▼ Click to view all 3</div>
+        </div>
+        <div class="quad" onclick="openQuadModal('rr')" style="background:#f2f5f9;border:1.5px solid rgba(71,85,105,.12)">
+          <div class="qtop"><div class="qtitle" style="color:#475569">Refine &amp; Reassess</div><div class="qnum" style="color:#475569">3</div></div>
+          <div class="qdesc" style="color:#475569">Low–med impact · High–med effort</div>
+          <div class="qex" style="border-color:rgba(71,85,105,.22)">
+            <div class="qexrow"><div class="dot" style="background:#475569"></div><span style="font-size:10.5px;color:#475569">Global Escalation Matrix</span></div>
+            <div class="qexrow"><div class="dot" style="background:#475569"></div><span style="font-size:10.5px;color:#475569">Sprout Brand Voice AI</span></div>
+            <div class="qexrow"><div class="dot" style="background:#475569"></div><span style="font-size:10.5px;color:#475569">IVR Recall / SF Recall</span></div>
+          </div>
+          <div style="margin-top:9px;font-size:10px;color:#475569;font-weight:600;opacity:.8">▼ Click to view all 3</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:8px">
+        <div class="axlbl">LOW EFFORT</div><div class="axlbl">HIGH EFFORT</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT TRACK DISTRIBUTION -->
+<div class="card">
+  <div style="font-size:13px;font-weight:600;color:#0a1c42;margin-bottom:3px">Project track distribution</div>
+  <div style="font-size:12px;color:#64748b;margin-bottom:16px">33 opportunities across 5 project tracks &nbsp;·&nbsp; <span style="color:#1e40af;font-weight:600">Click any segment to see its projects</span></div>
+  <div style="display:flex;align-items:center;gap:28px;width:100%">
+    <svg id="donutSvg" width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;display:block;cursor:pointer">
+      <circle cx="90" cy="90" r="70" fill="none" stroke="#edf2f8" stroke-width="30"/>
+    </svg>
+    <div id="trackLegend" style="flex:1;min-width:0"></div>
+  </div>
+</div>
+
+<!-- TO-BE CAPABILITIES -->
+<div class="card">
+  <div class="sh"><div class="sbar" style="background:#006D70"></div><h2 class="stitle">To-be state — key capabilities</h2><span class="ssec">Aligned future-state from the workshop</span></div>
+  <div class="g4">
+    <div class="capc"><div class="cap-icon">🔢</div><div class="cap-t">Reason Hierarchy Code Standardization</div><div class="cap-d">Consistent L1–L4 classification enabling cross-region analytics</div></div>
+    <div class="capc"><div class="cap-icon">📚</div><div class="cap-t">Revamped Knowledge Base</div><div class="cap-d">Embedded, real-time knowledge articles within the case tool</div></div>
+    <div class="capc"><div class="cap-icon">📡</div><div class="cap-t">Omnichannel Environment</div><div class="cap-d">A unified platform bringing together phone, email, chat, social &amp; digital</div></div>
+    <div class="capc"><div class="cap-icon">🗺️</div><div class="cap-t">Global Escalation Matrix</div><div class="cap-d">One global framework for complaint escalation across all channels</div></div>
+    <div class="capc"><div class="cap-icon">🌐</div><div class="cap-t">Language Translation &amp; AI Consumer Assist</div><div class="cap-d">AI-powered IVR, multilingual support &amp; smart deflection — consumers served in their language and intelligently routed</div></div>
+    <div class="capc"><div class="cap-icon">🎙️</div><div class="cap-t">Salesforce Auto Transcription</div><div class="cap-d">AI-generated call summaries replacing manual verbatim entry</div></div>
+    <div class="capc"><div class="cap-icon">📊</div><div class="cap-t">Global VOC Reporting</div><div class="cap-d">Weekly sensitives + monthly reports produced by GCC Analysts</div></div>
+    <div class="capc"><div class="cap-icon">🏛️</div><div class="cap-t">Governance Model</div><div class="cap-d">Functional team ownership cadence with defined accountability</div></div>
+  </div>
+</div>
+
+<!-- GOVERNANCE & NEXT STEPS -->
+<div class="card">
+  <div class="sh"><div class="sbar" style="background:#C41230"></div><h2 class="stitle">Governance &amp; next steps</h2></div>
+  <div class="g2" style="margin-bottom:16px">
+    <div class="govc"><div class="govc-icon">🔄</div><div><div class="govc-title">Mexico Workshop<span class="tbd">18 May</span></div><div class="govc-d">To align and prepare the Digital Transformation roadmap with the Contact Centre of the Future as the North Star.</div></div></div>
+    <div class="govc"><div class="govc-icon">📋</div><div><div class="govc-title">Consumer Pulse Workshop<span class="tbd">08 Jun</span></div><div class="govc-d">To align and prepare for the Consumer Pulse launch in North America and define the path to global scale.</div></div></div>
+  </div>
+  <table>
+    <thead class="thead-dk"><tr><th>Action</th><th>Owner</th><th>Due date</th></tr></thead>
+    <tbody>
+      <tr class="teven"><td>Share workshop Close-out summary report</td><td style="color:#475569;font-weight:500">Continuous Improvement</td><td><span class="pill" style="background:#DBEAFE;color:#1e40af">13 May</span></td></tr>
+      <tr class="todd"><td>Finalize project governance &amp; workstream ownership</td><td style="color:#475569;font-weight:500">Diego</td><td><span class="pill" style="background:#DBEAFE;color:#1e40af">29 May</span></td></tr>
+      <tr class="teven"><td>Mexico NA Digital Transformation Workshop (Contact Centre Future Focus)</td><td style="color:#475569;font-weight:500">Ringmaster Project Team</td><td><span class="pill" style="background:#DBEAFE;color:#1e40af">18 May</span></td></tr>
+      <tr class="todd"><td>Consumer Pulse Prep: Readout, Core Team Align, Process Map</td><td style="color:#475569;font-weight:500">Consumer Pulse Project Team</td><td><span class="pill" style="background:#DBEAFE;color:#1e40af">08 Jun</span></td></tr>
+      <tr class="teven"><td>To Be Operating Model Framework</td><td style="color:#475569;font-weight:500">Continuous Improvement</td><td><span class="pill" style="background:#DBEAFE;color:#1e40af">15 Jun</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- VOC SECTION -->
+<div class="card">
+  <div class="sh"><div class="sbar" style="background:#006D70"></div><h2 class="stitle">Workshop feedback</h2><span class="ssec">6 anonymous responses · Overall score 4.50 / 5.0</span></div>
+  <div style="background:#0a1c42;border-radius:10px;padding:16px 22px;display:flex;align-items:center;gap:18px;margin-bottom:16px">
+    <div>
+      <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px">Overall Workshop Score</div>
+      <div style="display:flex;align-items:baseline;gap:8px"><span style="font-family:'Playfair Display',serif;font-size:44px;font-weight:600;color:#fff;line-height:1">4.50</span><span style="font-size:18px;color:rgba(255,255,255,.4)">/ 5.0</span></div>
+    </div>
+    <div style="flex:1;height:1px;background:rgba(255,255,255,.12)"></div>
+    <div style="font-size:26px;color:#C41230">★★★★<span style="color:rgba(255,255,255,.2)">★</span></div>
+    <div style="flex:1;height:1px;background:rgba(255,255,255,.12)"></div>
+    <div style="text-align:right"><div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.45);text-transform:uppercase;margin-bottom:3px">Respondents</div><div style="font-family:'Playfair Display',serif;font-size:30px;font-weight:600;color:#fff">6</div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px">
+    <div class="voc-card"><div class="voc-lbl">Overall Effectiveness</div><div class="voc-n">4.3<span style="font-size:14px;color:#94a3b8"> /5</span></div><div style="margin-top:6px;font-size:14px;color:#C41230">★★★★<span style="color:#dde6f0">★</span></div><div style="margin-top:6px;font-size:11px;color:#64748b">How effective was the overall workshop?</div></div>
+    <div class="voc-card"><div class="voc-lbl">Workshop Preparation</div><div class="voc-n">4.3<span style="font-size:14px;color:#94a3b8"> /5</span></div><div style="margin-top:6px;font-size:14px;color:#C41230">★★★★<span style="color:#dde6f0">★</span></div><div style="margin-top:6px;font-size:11px;color:#64748b">How was the overall workshop preparation?</div></div>
+    <div class="voc-card"><div class="voc-lbl">Opportunity Identification</div><div class="voc-n" style="color:#006D70">4.7<span style="font-size:14px;color:#94a3b8"> /5</span></div><div style="margin-top:6px;font-size:14px;color:#C41230">★★★★★</div><div style="margin-top:6px;font-size:11px;color:#64748b">Effectiveness in identifying improvement opportunities</div></div>
+    <div class="voc-card"><div class="voc-lbl">Facilitator Rating</div><div class="voc-n">4.5<span style="font-size:14px;color:#94a3b8"> /5</span></div><div style="margin-top:6px;font-size:14px;color:#C41230">★★★★<span style="color:#dde6f0">★</span></div><div style="margin-top:6px;font-size:11px;color:#64748b">Feedback on VSM facilitators (GBS CI–Process Discovery Team)</div></div>
+  </div>
+  <div style="font-size:13px;font-weight:600;color:#0a1c42;margin-bottom:12px">Participant Feedback</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <div class="quote-card" style="border-left:3px solid #006D70"><div class="quote-text">"All 3 — business, technology and GBS teams going through this workshop process is the proper way to collaborate in defining what good could look like and then deliver value for Kraft Heinz."</div><div class="quote-meta">Anonymous &nbsp;·&nbsp; Overall: 5/5</div></div>
+    <div class="quote-card" style="border-left:3px solid #0a1c42"><div class="quote-text">"Great preparation and moderation. To make the next workshop better, we should look at time allocation — we could have spent more time on opportunities, defining overall vision and roadmap."</div><div class="quote-meta">Anonymous &nbsp;·&nbsp; Overall: 4/5</div></div>
+    <div class="quote-card" style="border-left:3px solid #C97B0C;grid-column:1/-1"><div class="quote-text">"Overall the workshop was very successful and brought us a good understanding of how we can operate in the future. I would suggest reflecting on the final day to better identify and group opportunities — clearer hierarchy and grouping would strengthen the output."</div><div class="quote-meta">Anonymous &nbsp;·&nbsp; Overall: 4/5</div></div>
+  </div>
+</div>
+
+<!-- PROJECTS TABLE -->
+<div class="card">
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div class="sbar" style="background:#C97B0C;height:20px;width:3px;border-radius:2px"></div>
+      <h2 class="stitle">Projects</h2>
+      <span id="showBadge" class="showing" style="background:#F4F7FB;color:#64748b">Showing 33 / 33</span>
+    </div>
+  </div>
+  <div style="margin-bottom:16px">
+    <div class="frow">
+      <span class="flbl">PROJECT</span>
+      <button class="fbtn" data-g="tr" data-v="All" onclick="setFilter('tr','All',this)" style="background:#C41230;border-color:#C41230;color:#fff;font-weight:600">All</button>
+      <button class="fbtn" data-g="tr" data-v="Sonic" onclick="setFilter('tr','Sonic',this)">Sonic</button>
+      <button class="fbtn" data-g="tr" data-v="NA Tech Transformation" onclick="setFilter('tr','NA Tech Transformation',this)">NA Tech Transformation</button>
+      <button class="fbtn" data-g="tr" data-v="Continuous Improvement" onclick="setFilter('tr','Continuous Improvement',this)">Continuous Improvement</button>
+      <button class="fbtn" data-g="tr" data-v="Consumer Pulse" onclick="setFilter('tr','Consumer Pulse',this)">Consumer Pulse</button>
+      <button class="fbtn" data-g="tr" data-v="ROW Implementation" onclick="setFilter('tr','ROW Implementation',this)">ROW Implementation</button>
+    </div>
+  </div>
+  <div style="overflow-x:auto">
+    <table>
+      <thead class="thead-lt"><tr><th>#</th><th>Opportunity</th><th>Impact</th><th>Effort</th><th>Project</th><th>Owner</th><th>Region</th></tr></thead>
+      <tbody id="oppTbl"></tbody>
+    </table>
+  </div>
+</div>
+
+<div style="text-align:center;padding:22px 0 6px;font-size:11px;color:#94a3b8">GCEM Ringmaster Workshop &nbsp;·&nbsp; Close-out summary &nbsp;·&nbsp; Confidential</div>
+</div>
+
+<!-- QUAD MODAL -->
+<div id="quadModal" class="modal-ov" onclick="if(event.target===this)closeModal('quad')">
+  <div class="modal-box">
+    <div id="qMhdr" class="modal-hdr">
+      <div><div id="qMtitle" class="modal-title"></div><div id="qMdesc" class="modal-desc"></div></div>
+      <button class="modal-close" onclick="closeModal('quad')">&#215;</button>
+    </div>
+    <div class="modal-body">
+      <table>
+        <thead><tr style="background:#F4F7FB;border-bottom:2px solid #DDE6F0">
+          <th style="padding:9px 12px;font-size:11px;color:#0a1c42">#</th>
+          <th style="padding:9px 12px;font-size:11px;color:#0a1c42">Opportunity</th>
+          <th style="padding:9px 12px;font-size:11px;color:#0a1c42">Project</th>
+          <th style="padding:9px 12px;font-size:11px;color:#0a1c42">Owner</th>
+          <th style="padding:9px 12px;font-size:11px;color:#0a1c42">Region</th>
+        </tr></thead>
+        <tbody id="qMbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- TRACK MODAL -->
+<div id="trackModal" class="modal-ov" onclick="if(event.target===this)closeModal('track')">
+  <div class="modal-box">
+    <div id="tMhdr" class="modal-hdr">
+      <div><div id="tMtitle" class="modal-title"></div><div id="tMdesc" class="modal-desc"></div></div>
+      <button class="modal-close" onclick="closeModal('track')">&#215;</button>
+    </div>
+    <div class="modal-body">
+      <table>
+        <thead><tr style="background:#F4F7FB;border-bottom:2px solid #DDE6F0">
+          <th style="padding:9px 12px;font-size:11px;color:#0a1c42">#</th>
+          <th style="padding:9px 12px;font-size:11px;color:#0a1c42">Opportunity</th>
+          <th style="padding:9px 12px;font-size:11px;color:#0a1c42">Impact</th>
+          <th style="padding:9px 12px;font-size:11px;color:#0a1c42">Effort</th>
+          <th style="padding:9px 12px;font-size:11px;color:#0a1c42">Owner</th>
+          <th style="padding:9px 12px;font-size:11px;color:#0a1c42">Region</th>
+        </tr></thead>
+        <tbody id="tMbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════
+// DATA
+// ═══════════════════════════════════════════
+var DATA=[
+  {id:"1",  item:"Define Total Complaints KPI",                                                    impact:"High",  effort:"Low",    tr:"ROW Implementation",     owner:"Andrew & Dan",       region:"ROW"},
+  {id:"2",  item:"Baseline CC Ops KPIs",                                                           impact:"High",  effort:"Low",    tr:"Sonic",                  owner:"Rishabh & Dan",      region:"NA"},
+  {id:"3",  item:"Defining CCaaS Roadmap (due diligence & timeline reco)",                         impact:"High",  effort:"Low",    tr:"NA Tech Transformation", owner:"Mariya",             region:"NA + Global"},
+  {id:"4",  item:"Implementation of CCaaS solution + Hardware + Networking",                       impact:"High",  effort:"High",   tr:"NA Tech Transformation", owner:"Mariya",             region:"NA + Global"},
+  {id:"5",  item:"Knowledge Base Content Optimization – Identify the gaps & revise the KAs",      impact:"High",  effort:"High",   tr:"Continuous Improvement", owner:"Rishabh",            region:"NA + Global"},
+  {id:"6",  item:"Fulfilment – Global Model + Digitize",                                           impact:"High",  effort:"High",   tr:"ROW Implementation",     owner:"Dan",               region:"Global"},
+  {id:"7",  item:"Knowledge Base Tech Integration Platform for EU",                                impact:"High",  effort:"High",   tr:"ROW Implementation",     owner:"Mariya",             region:"ROW"},
+  {id:"8",  item:"KA AI Integration (Anthropic POC)",                                              impact:"High",  effort:"High",   tr:"Continuous Improvement", owner:"Dan",               region:"NA"},
+  {id:"9",  item:"KB Tech Procurement (Licenses)",                                                 impact:"High",  effort:"High",   tr:"ROW Implementation",     owner:"Mariya & Ankur",     region:"NA"},
+  {id:"10", item:"Improve Contact Us Findability on Consumer Sites",                               impact:"High",  effort:"High",   tr:"NA Tech Transformation", owner:"Mariya & Lucie",     region:"Global"},
+  {id:"11", item:"Optimize Contact Us UX, interactivity (product scan), and integrations",        impact:"High",  effort:"High",   tr:"NA Tech Transformation", owner:"Mariya",             region:"Global"},
+  {id:"12", item:"Implementation of Live Chat Agent solution",                                     impact:"High",  effort:"Medium", tr:"Sonic",                  owner:"Mariya",             region:"NA"},
+  {id:"13", item:"Implementation of AI Chat Bot solution",                                         impact:"High",  effort:"High",   tr:"NA Tech Transformation", owner:"Mariya & Lucie",     region:"NA"},
+  {id:"14", item:"Label pack information alignment improvement",                                   impact:"High",  effort:"High",   tr:"ROW Implementation",     owner:"Andrew & Ekaterina", region:"ROW"},
+  {id:"15", item:"Sprout Social – brand voice AI training",                                        impact:"Medium",effort:"High",   tr:"Sonic",                  owner:"Mariya & Dan",       region:"NA + Global"},
+  {id:"16", item:"Sprout Social – ROW Salesforce integration",                                     impact:"High",  effort:"Medium", tr:"ROW Implementation",     owner:"Mariya & Lucie",     region:"EU"},
+  {id:"17", item:"Global Escalation Matrix (Channel Agnostic)",                                    impact:"Low",   effort:"Medium", tr:"Continuous Improvement", owner:"JC | Dan",           region:"NA + Global"},
+  {id:"18", item:"Incorporate auto callback capabilities",                                         impact:"High",  effort:"Low",    tr:"Sonic",                  owner:"JC | Jackie",        region:"NA"},
+  {id:"19", item:"New queue for SMS from calls in AWS",                                            impact:"Low",   effort:"Low",    tr:"Sonic",                  owner:"JC | Jackie",        region:"NA"},
+  {id:"20", item:"Review & Optimise Ratings and Reviews case creation Tech",                       impact:"Low",   effort:"Low",    tr:"Consumer Pulse",         owner:"Jackie | Mariya",    region:"NA"},
+  {id:"21", item:"Evaluate 3-star ratings into E-Com",                                            impact:"Low",   effort:"Low",    tr:"Consumer Pulse",         owner:"Jackie",             region:"NA"},
+  {id:"22", item:"Explore factory-to-factory package code management and master data",             impact:"High",  effort:"Medium", tr:"NA Tech Transformation", owner:"Dan | Mariya",       region:"NA + Global"},
+  {id:"23", item:"Global Reason Code Standardization (L1–L4)",                                    impact:"High",  effort:"Medium", tr:"Continuous Improvement", owner:"Dan | Andrew",       region:"NA + Global"},
+  {id:"24", item:"Governance New Product / Product Change Process & Data Flow",                    impact:"High",  effort:"High",   tr:"TBD",                    owner:"TBD",               region:"Global"},
+  {id:"25", item:"Globally unified systems – AWS to SF to Snowflake to PBI",                      impact:"High",  effort:"Medium", tr:"NA Tech Transformation", owner:"Dan & Mariya",       region:"NA"},
+  {id:"26", item:"Establish SF thresholds to trigger Real-Time Alerts",                            impact:"High",  effort:"Low",    tr:"Sonic",                  owner:"Mariya | Dan",       region:"NA + ROW"},
+  {id:"27", item:"Global VOC Reporting (Weekly sensitives, Monthly reports – GCC Analysts)",      impact:"High",  effort:"Low",    tr:"Consumer Pulse",         owner:"Dan",               region:"NA"},
+  {id:"28", item:"Auto Transcription on SF (Post Move to CCaaS)",                                 impact:"High",  effort:"High",   tr:"ROW Implementation",     owner:"Mariya",             region:"ROW"},
+  {id:"29", item:"Conversational IVR with call routing ability + opt-out option + triage",        impact:"Medium",effort:"Medium", tr:"NA Tech Transformation", owner:"Mariya",             region:"NA"},
+  {id:"30", item:"IVR Recall + SF Recall runrolls",                                               impact:"High",  effort:"High",   tr:"Sonic",                  owner:"Dan | JC & Jackie",  region:"NA"},
+  {id:"31", item:"Governance model to drive ownership for the functional teams",                   impact:"High",  effort:"Medium", tr:"Consumer Pulse",         owner:"Dan",               region:"Global"},
+  {id:"32", item:"Automated QC",                                                                   impact:"High",  effort:"Medium", tr:"NA Tech Transformation", owner:"Mariya",             region:"NA + Global"},
+  {id:"33", item:"Converting WTB into Sale Transactions after AI manages WTB – Product locator as 2nd use case", impact:"High", effort:"High", tr:"NA Tech Transformation", owner:"Mariya | Jackie", region:"NA + Global"}
+];
+
+// ═══════════════════════════════════════════
+// COLOUR MAPS
+// ═══════════════════════════════════════════
+var TR_C  = {"Sonic":"#065f46","NA Tech Transformation":"#1e40af","Continuous Improvement":"#92400e","Consumer Pulse":"#0e7490","ROW Implementation":"#4c1d95","TBD":"#64748b"};
+var TR_BG = {"Sonic":"#d1fae5","NA Tech Transformation":"#dbeafe","Continuous Improvement":"#fef3c7","Consumer Pulse":"#cffafe","ROW Implementation":"#ede9fe","TBD":"#f2f5f9"};
+var IMP_C = {High:"#006D70",Medium:"#C97B0C",Low:"#475569",TBD:"#94a3b8"};
+var EFF_C = {High:"#C41230",Medium:"#C97B0C",Low:"#006D70",TBD:"#94a3b8"};
+
+var PRD = [
+  {l:"Sonic",                  v:7,  c:"#065f46"},
+  {l:"NA Tech Transformation", v:10, c:"#1e40af"},
+  {l:"Continuous Improvement", v:4,  c:"#92400e"},
+  {l:"Consumer Pulse",         v:4,  c:"#0e7490"},
+  {l:"ROW Implementation",     v:7,  c:"#4c1d95"},
+  {l:"TBD",                    v:1,  c:"#94a3b8"}
+];
+
+// ═══════════════════════════════════════════
+// DONUT — pure SVG stroke-dasharray
+// ═══════════════════════════════════════════
+function buildDonut() {
+  var svg = document.getElementById("donutSvg");
+  if (!svg) return;
+  var r = 70, cx = 90, cy = 90;
+  var circ = 2 * Math.PI * r;
+  var total = PRD.reduce(function(s,d){return s+d.v;},0);
+  var deg = 0;
+
+  PRD.forEach(function(d) {
+    var frac = d.v / total;
+    var dash = frac * circ;
+    var gap  = circ - dash;
+    var offset = circ * 0.25 - deg;
+    var circle = document.createElementNS("http://www.w3.org/2000/svg","circle");
+    circle.setAttribute("cx", cx);
+    circle.setAttribute("cy", cy);
+    circle.setAttribute("r",  r);
+    circle.setAttribute("fill","none");
+    circle.setAttribute("stroke", d.c);
+    circle.setAttribute("stroke-width","30");
+    circle.setAttribute("stroke-dasharray", dash.toFixed(3)+" "+gap.toFixed(3));
+    circle.setAttribute("stroke-dashoffset", offset.toFixed(3));
+    circle.style.cursor = "pointer";
+    (function(label){
+      circle.addEventListener("click", function(){ openTrackModal(label); });
+    })(d.l);
+    svg.appendChild(circle);
+    deg += frac * circ;
+  });
+
+  // White centre hole
+  var hole = document.createElementNS("http://www.w3.org/2000/svg","circle");
+  hole.setAttribute("cx",cx); hole.setAttribute("cy",cy); hole.setAttribute("r","45");
+  hole.setAttribute("fill","white");
+  svg.appendChild(hole);
+
+  // Centre label
+  function svgText(txt, y, size, weight, color) {
+    var t = document.createElementNS("http://www.w3.org/2000/svg","text");
+    t.setAttribute("x", cx); t.setAttribute("y", y);
+    t.setAttribute("text-anchor","middle");
+    t.setAttribute("font-size", size);
+    t.setAttribute("font-weight", weight);
+    t.setAttribute("fill", color);
+    t.setAttribute("font-family","Georgia,serif");
+    t.textContent = txt;
+    svg.appendChild(t);
+  }
+  svgText("33", cy - 4, "22", "700", "#0a1c42");
+  svgText("projects", cy + 13, "10", "400", "#64748b");
+}
+
+// ═══════════════════════════════════════════
+// LEGEND
+// ═══════════════════════════════════════════
+function buildLegend() {
+  var el = document.getElementById("trackLegend");
+  if (!el) return;
+  el.innerHTML = "";
+  PRD.forEach(function(d) {
+    var pct = Math.round(d.v / 33 * 100);
+    var row = document.createElement("div");
+    row.style.cssText = "display:flex;align-items:center;gap:10px;margin-bottom:10px;padding:5px 8px;border-radius:6px;cursor:pointer;transition:background .15s";
+    row.onmouseenter = function(){ this.style.background = "#f1f5f9"; };
+    row.onmouseleave = function(){ this.style.background = "transparent"; };
+    (function(label){ row.addEventListener("click", function(){ openTrackModal(label); }); })(d.l);
+    row.innerHTML =
+      '<div style="width:10px;height:10px;border-radius:2px;background:'+d.c+';flex-shrink:0"></div>'+
+      '<div style="width:175px;flex-shrink:0;font-size:12px;color:#1a2332">'+d.l+'</div>'+
+      '<div style="flex:1;height:7px;background:#edf2f8;border-radius:4px;overflow:hidden">'+
+        '<div style="width:'+pct+'%;height:100%;background:'+d.c+';border-radius:4px"></div>'+
+      '</div>'+
+      '<div style="font-family:\'Playfair Display\',serif;font-size:20px;font-weight:600;color:#0a1c42;width:22px;text-align:right;flex-shrink:0">'+d.v+'</div>'+
+      '<div style="font-size:11px;color:#64748b;width:30px;flex-shrink:0">'+pct+'%</div>'+
+      '<div style="font-size:10px;color:#1e40af;font-weight:600;margin-left:2px">&#9658;</div>';
+    el.appendChild(row);
+  });
+}
+
+// ═══════════════════════════════════════════
+// FILTER + TABLE
+// ═══════════════════════════════════════════
+var ST = {tr:"All"};
+
+function setFilter(g, v, el) {
+  ST[g] = v;
+  document.querySelectorAll('[data-g="'+g+'"]').forEach(function(b){
+    b.style.background="#fff"; b.style.borderColor="#DDE6F0";
+    b.style.color="#475569";   b.style.fontWeight="400";
+  });
+  el.style.background="#C41230"; el.style.borderColor="#C41230";
+  el.style.color="#fff";         el.style.fontWeight="600";
+  renderTbl();
+}
+
+function renderTbl() {
+  var f = DATA.filter(function(o){ return ST.tr==="All" || o.tr===ST.tr; });
+  var badge = document.getElementById("showBadge");
+  if (badge) {
+    badge.textContent = "Showing "+f.length+" / "+DATA.length;
+    badge.style.background = f.length < DATA.length ? "#DBEAFE" : "#F4F7FB";
+    badge.style.color       = f.length < DATA.length ? "#1e40af" : "#64748b";
+  }
+  var tbody = document.getElementById("oppTbl");
+  if (!tbody) return;
+  tbody.innerHTML = "";
+  if (!f.length) {
+    var etr = document.createElement("tr");
+    var etd = document.createElement("td");
+    etd.colSpan = 7; etd.style.cssText = "padding:28px;text-align:center;color:#94a3b8";
+    etd.textContent = "No opportunities match the selected filters.";
+    etr.appendChild(etd); tbody.appendChild(etr); return;
+  }
+  f.forEach(function(o, i) {
+    var tr = document.createElement("tr");
+    tr.className = i%2===0 ? "teven" : "todd";
+    var bg = TR_BG[o.tr]||"#f2f5f9", fg = TR_C[o.tr]||"#475569";
+    var cells = [
+      {text:String(o.id),     style:"color:#94a3b8;font-weight:700;font-size:11px"},
+      {text:String(o.item),   style:"color:#1a2332;line-height:1.5"},
+      {text:String(o.impact), style:"font-size:11px;font-weight:600;color:"+(IMP_C[o.impact]||"#94a3b8")},
+      {text:String(o.effort), style:"font-size:11px;font-weight:600;color:"+(EFF_C[o.effort]||"#94a3b8")},
+      {html:'<span class="pill" style="background:'+bg+';color:'+fg+'">'+o.tr+'</span>', style:""},
+      {text:String(o.owner),  style:"color:#475569;font-size:11px"},
+      {text:String(o.region), style:"color:#94a3b8;font-size:11px;white-space:nowrap"}
+    ];
+    cells.forEach(function(c){
+      var td = document.createElement("td");
+      td.style.cssText = "padding:8px 12px;"+(c.style||"");
+      if (c.html !== undefined) td.innerHTML = c.html;
+      else td.textContent = c.text || "";
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+}
+
+// ═══════════════════════════════════════════
+// MODALS
+// ═══════════════════════════════════════════
+function closeModal(which) {
+  var el = document.getElementById(which==="quad" ? "quadModal" : "trackModal");
+  if (el) { el.classList.remove("open"); document.body.style.overflow = ""; }
+}
+
+function fillTable(tbodyId, rows) {
+  var tbody = document.getElementById(tbodyId);
+  tbody.innerHTML = "";
+  rows.forEach(function(cells, i) {
+    var tr = document.createElement("tr");
+    tr.style.cssText = "background:"+(i%2===0?"#fff":"#FAFBFD")+";border-bottom:1px solid #EDF2F8";
+    cells.forEach(function(c) {
+      var td = document.createElement("td");
+      td.style.cssText = "padding:9px 12px;font-size:12px;"+(c.s||"");
+      if (c.html) td.innerHTML = c.html;
+      else td.textContent = c.t || "";
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+}
+
+var QUADS = {
+  qw: {title:"Quick wins",         desc:"High impact · Low effort",             color:"#006D70", match:function(o){return o.impact==="High"&&o.effort==="Low";}},
+  sb: {title:"Strategic bets",     desc:"High impact · High or Medium effort",  color:"#0a1c42", match:function(o){return o.impact==="High"&&(o.effort==="High"||o.effort==="Medium");}},
+  qe: {title:"Quick enhancers",    desc:"Low impact · Low effort",              color:"#C97B0C", match:function(o){return o.impact==="Low"&&o.effort==="Low";}},
+  rr: {title:"Refine & Reassess",  desc:"Low/Medium impact · High/Med effort",  color:"#475569", match:function(o){return(o.impact==="Low"||o.impact==="Medium")&&(o.effort==="High"||o.effort==="Medium");}}
+};
+
+function openQuadModal(key) {
+  var q = QUADS[key];
+  var items = DATA.filter(q.match);
+  document.getElementById("qMtitle").textContent = q.title;
+  document.getElementById("qMdesc").textContent  = items.length+" opportunit"+(items.length===1?"y":"ies");
+  document.getElementById("qMhdr").style.borderTop = "4px solid "+q.color;
+  fillTable("qMbody", items.map(function(o){
+    return [
+      {t:o.id,    s:"color:#94a3b8;font-weight:700;font-size:11px;white-space:nowrap"},
+      {t:o.item,  s:"color:#1a2332;line-height:1.5"},
+      {html:'<span class="pill" style="background:'+(TR_BG[o.tr]||"#f2f5f9")+';color:'+(TR_C[o.tr]||"#475569")+'">'+o.tr+'</span>', s:""},
+      {t:o.owner, s:"color:#475569;font-size:11px;white-space:nowrap"},
+      {t:o.region,s:"color:#94a3b8;font-size:11px;white-space:nowrap"}
+    ];
+  }));
+  document.getElementById("quadModal").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function openTrackModal(track) {
+  var items = DATA.filter(function(o){ return o.tr===track; });
+  var color = TR_C[track]||"#0a1c42";
+  document.getElementById("tMtitle").textContent = track;
+  document.getElementById("tMdesc").textContent  = items.length+" project"+(items.length===1?"":"s");
+  document.getElementById("tMhdr").style.borderTop = "4px solid "+color;
+  fillTable("tMbody", items.map(function(o){
+    return [
+      {t:o.id,    s:"color:#94a3b8;font-weight:700;font-size:11px;white-space:nowrap"},
+      {t:o.item,  s:"color:#1a2332;line-height:1.5"},
+      {t:o.impact,s:"font-size:11px;font-weight:600;color:"+(IMP_C[o.impact]||"#94a3b8")},
+      {t:o.effort,s:"font-size:11px;font-weight:600;color:"+(EFF_C[o.effort]||"#94a3b8")},
+      {t:o.owner, s:"color:#475569;font-size:11px;white-space:nowrap"},
+      {t:o.region,s:"color:#94a3b8;font-size:11px;white-space:nowrap"}
+    ];
+  }));
+  document.getElementById("trackModal").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+document.addEventListener("keydown", function(e){
+  if (e.key==="Escape") { closeModal("quad"); closeModal("track"); }
+});
+
+// ═══════════════════════════════════════════
+// INIT — runs immediately, no event needed
+// ═══════════════════════════════════════════
+buildDonut();
+buildLegend();
+renderTbl();
+</script>
+</body>
+</html>
